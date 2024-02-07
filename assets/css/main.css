@@ -46,6 +46,10 @@
   font-weight: 400;
 }
 
+.header__navbar-item--has-qr:hover .header__qr {
+  display: block;
+}
+
 .header__navbar-item--seperate::after {
   content: "";
   display: block;
@@ -72,4 +76,41 @@
 .header__navbar-title-no-pointer {
   cursor: text;
   color: var(--white-color);
+}
+
+/* Header QR Code */
+.header__qr {
+  background-color: var(--white-color);
+  width: 186px;
+  position: absolute;
+  left: 0;
+  top: 118%;
+  padding: 8px;
+  border-radius: 3px;
+  display: none;
+  animation: fadeIn ease-in 0.3s;
+}
+/* lam cau noi giua item hover va qr */
+.header__qr::before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  content: "";
+  height: 20px;
+  left: 0;
+  top: -16px;
+}
+
+.header__qr-img {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.header__qr-apps {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__qr-apps-img {
+  height: 16px;
 }
