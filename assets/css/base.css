@@ -3,6 +3,7 @@
   --black-color: #000;
   --text-color: #333;
   --primary-color: #6e65c7;
+  --border-color: #dbdbdb;
 }
 
 * {
@@ -63,4 +64,20 @@ html {
   position: relative;
   z-index: 1;
   border-radius: 5px;
+}
+
+/* Button Style */
+.btn {
+  min-width: 142px;
+  height: 36px;
+  text-decoration: none;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.4rem;
+  padding: 0;
+}
+
+.btn.btn--primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
