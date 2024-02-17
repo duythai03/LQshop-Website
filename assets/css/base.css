@@ -5,8 +5,8 @@
   --primary-color: #6e65c7;
   --border-color: #dbdbdb;
 
-  --header-height: 180px;
-  --navbar-height: 48px;
+  --header-height: 200px;
+  --navbar-height: 44px;
   --header-with-search-height: calc(
     var(--header-height) - var(--navbar-height)
   );
