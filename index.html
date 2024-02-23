@@ -201,6 +201,8 @@
                   class="header__search-input"
                   placeholder="Nhập để tìm kiếm Acc"
                 />
+
+                <!-- Search History -->
                 <div class="header__search-history">
                   <h3 class="header__search-history-heading">
                     Lịch sử tìm kiếm
@@ -215,6 +217,7 @@
                   </ul>
                 </div>
               </div>
+
               <div class="header__search-select">
                 <span class="header__search-select-label"
                   >Liên Quân
@@ -243,7 +246,19 @@
             </div>
 
             <div class="header__cart">
-              <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+              <div class="header__cart-wrap">
+                <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                <div class="header__cart-list header__cart-list--no-cart">
+                  <img
+                    src="./assets/img/cart-empty-img.8b677cb3.png"
+                    alt=""
+                    class="header__cart-no-cart-img"
+                  />
+                  <span class="header__cart-no-cart-message"
+                    >Chưa có sản phẩm</span
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
