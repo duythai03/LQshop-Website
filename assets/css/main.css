@@ -11,6 +11,8 @@
 .header__navbar-list {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  align-items: center;
 }
 
 .header__navbar-item {
@@ -31,7 +33,7 @@
 .header__navbar-item,
 .header__navbar-item-link,
 .header__navbar-item-icon-link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 
@@ -80,6 +82,85 @@
 .header__navbar-title-no-pointer {
   cursor: text;
   color: var(--white-color);
+}
+
+.header__navbar-user {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header__navbar-user:hover .header__navbar-user-menu {
+  display: block;
+}
+
+.header__navbar-user-img {
+  width: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.header__navbar-user-name {
+  margin-left: 8px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.header__navbar-user-menu {
+  position: absolute;
+  padding-left: 0;
+  list-style: none;
+  top: calc(100% + 6px);
+  right: 0;
+  background-color: var(--white-color);
+  border-radius: 2px;
+  width: 160px;
+  box-shadow: 0 1px 2px #e0e0e0;
+  z-index: 1;
+  display: none;
+}
+
+.header__navbar-user-menu::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  width: 57%;
+  height: 8px;
+}
+
+.header__navbar-user-menu::after {
+  content: "";
+  border-width: 10px 16px;
+  border-style: solid;
+  border-color: transparent transparent var(--white-color) transparent;
+  position: absolute;
+  top: -15px;
+  right: 2px;
+}
+
+.header__navbar-user-item a {
+  text-decoration: none;
+  display: block;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  padding: 6px 16px;
+  font-weight: 400;
+}
+
+.header__navbar-user-item a:hover {
+  background-color: #f7f6f6;
+}
+
+.header__navbar-user-item a:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.header__navbar-user-item a:last-child {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 
 /* Header QR Code */
@@ -408,7 +489,7 @@
   background-color: var(--white-color);
   width: 400px;
   border-radius: 2px;
-  /* display: none; */
+  display: none;
   animation: fadeIn ease-in 0.2s;
   cursor: default;
   box-shadow: 0 1px 3.125rem rgba(0, 0, 0, 0.2);
