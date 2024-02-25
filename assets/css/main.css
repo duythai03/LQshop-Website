@@ -1146,3 +1146,7 @@
   position: relative;
   bottom: -3px;
 }
+
+.home-product__pagination {
+  margin: 30px 0 24px 0;
+}

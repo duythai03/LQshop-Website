@@ -190,3 +190,40 @@ html {
 .select-input__link:hover {
   color: var(--primary-color);
 }
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.pagination-item {
+  text-align: center;
+  margin: 0 8px;
+}
+
+.pagination-item--active .pagination-item__link {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.pagination-item--active .pagination-item__link:hover {
+  background-color: #8788e0;
+}
+
+.pagination-item__link {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #939393;
+  height: 30px;
+  min-width: 40px;
+  display: block;
+  line-height: 30px;
+  border-radius: 2px;
+}
+
+.pagination-item__icon {
+}
