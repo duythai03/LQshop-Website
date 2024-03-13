@@ -344,6 +344,10 @@
   padding: 0 32px;
 }
 
+.auth-form__form {
+  padding-bottom: 32px;
+}
+
 .auth-form__header {
   display: flex;
   align-items: center;
